@@ -7,6 +7,51 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
 <body>
-    
+    <h1 id="title">Web Development Bootcamp</h1>
+    <p id="description">Thank you for your precious time! Help us make bootCamps more effective and successful</p>
+    <form action=" " method="POST" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Full Name <input type="text" id="name" required placeholder="Enter your full name"></label>
+            <label for="email" id="email-label">E-mail <input type="email" id="email" required placeholder="Enter your email"></label>
+            <label for="number" id="number-label">Age <input type="number" id="number"  min="13" max="60" placeholder="Enter your age"></label>
+       </fieldset>    
+
+       <fieldset>
+            <legend>Specify Gender(M/F) </legend>
+            <label for="male"><input type="radio" name="gender-specify" id="male">Male</label>
+            <label for="female"><input type="radio" name="gender-specify" id="female">Male</label>
+      </fieldset>
+
+      <fieldset>
+            <label for="education">What education level are you currently?
+                <select id="dropdown" name="education">
+                    <option value="">Select-One</option>
+                    <option value="1">Middle School</option>
+                    <option value="2">High School</option>
+                    <option value="3">Bachelor's Degree</option>
+                    <option value="4">Master's Degree</option>
+                </select>
+            </label>
+      </fieldset>
+
+      <fieldset>
+                <legend>Specify your current experience level</legend>
+                <label for="beginner"><input type="radio" name="experience-level" id="beginner" value="beginner"></label>
+                <label for="intermediate"><input type="radio" name="experience-level" id="intermediate" value="intermediate"></label>
+                <label for="advance"><input type="radio" name="experience-level" id="advance" value="advance"></label>
+      </fieldset>
+
+      <fieldset>
+                <legend>What motivates your for learning to code?</legend>
+                <label for="carrer"><input type="checkbox"id="carrer" value="Carrer-change">Carrer Change</label>
+                <label for="skill"><input type="checkbox"id="skill" value="skill">Skill Enhancement</label>
+                <label for="hobby"><input type="checkbox"id="hobby" value="hobby">Hobby</label>
+
+                <label for="suggestion">What do you think make Web Development bootcamps successful?
+                    <textarea rows="3" cols="30" id="suggestion" placeholder="I think bootcamp like this..."></textarea>
+                </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit">
+    </form>
 </body>
 </html>
